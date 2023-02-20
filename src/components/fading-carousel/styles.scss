@@ -1,0 +1,142 @@
+.container-caro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.fCarousel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.fCarousel li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animate 34s ease both infinite;
+}
+
+// @media only screen and (min-width: 768px) {
+//   .fCarousel {
+//     margin-left: 0px;
+//   }
+//   .fCarousel li {
+//     width: 284px;
+//     height: 284px;
+//   }
+// }
+
+// .fCarousel li img {
+//   border: 10px solid #fff;
+//   position: relative;
+//   z-index: 1;
+//   opacity: 1;
+// }
+
+.fCarousel li:nth-child(1) {
+  animation-delay: 34s;
+}
+
+.fCarousel li:nth-child(2) {
+  animation-delay: 32s;
+}
+
+.fCarousel li:nth-child(3) {
+  animation-delay: 30s;
+}
+
+.fCarousel li:nth-child(4) {
+  animation-delay: 28s;
+}
+
+.fCarousel li:nth-child(5) {
+  animation-delay: 26s;
+}
+
+.fCarousel li:nth-child(6) {
+  animation-delay: 24s;
+}
+
+.fCarousel li:nth-child(7) {
+  animation-delay: 22s;
+}
+
+.fCarousel li:nth-child(8) {
+  animation-delay: 20s;
+}
+
+.fCarousel li:nth-child(9) {
+  animation-delay: 18s;
+}
+
+.fCarousel li:nth-child(10) {
+  animation-delay: 16s;
+}
+
+.fCarousel li:nth-child(11) {
+  animation-delay: 14s;
+}
+
+.fCarousel li:nth-child(12) {
+  animation-delay: 12s;
+}
+
+.fCarousel li:nth-child(13) {
+  animation-delay: 10s;
+}
+
+.fCarousel li:nth-child(14) {
+  animation-delay: 8s;
+}
+
+.fCarousel li:nth-child(15) {
+  animation-delay: 5s;
+}
+
+.fCarousel li:nth-child(16) {
+  animation-delay: 4s;
+}
+
+.fCarousel li:nth-child(17) {
+  animation-delay: 2s;
+}
+
+.fCarousel li:nth-child(18) {
+  animation-delay: 0s;
+}
+
+@keyframes animate {
+  0%,
+  10% {
+    opacity: 1;
+    transform: none;
+    z-index: 10;
+  }
+  20%,
+  30% {
+    opacity: 0.5;
+    transform: translate3d(-190px, 0, 0) scale(0.2);
+    z-index: 1;
+  }
+  50% {
+    opacity: 0.5;
+    z-index: -1;
+  }
+  60% {
+    opacity: 0.5;
+    transform: translate3d(150px, 0, 0) scale(0.2);
+    z-index: 1;
+  }
+  70%,
+  80% {
+    opacity: 0.5;
+    transform: translate3d(170px, 0, 0) scale(0.2);
+    z-index: 1;
+  }
+}

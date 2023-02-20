@@ -1,0 +1,72 @@
+.pacman {
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 5em;
+  border-radius: 100em 100em 0 0;
+  transform-origin: bottom;
+  animation: eating-top 0.5s infinite;
+}
+
+.pacman,
+.pacman::before {
+  width: 70px;
+  height: calc(70px / 2);
+  background-color: #ffff00;
+}
+
+.pacman::before {
+  content: '';
+  display: block;
+  margin-top: calc(70px / 2);
+  position: absolute;
+  transform-origin: top;
+  border-radius: 0 0 100em 100em;
+  transform: rotate(80deg);
+  animation: eating-bottom 0.5s infinite;
+}
+
+.pacman-food {
+  position: absolute;
+  border-radius: 100em;
+  height: 20px;
+  width: 20px;
+  margin-top: 100px;
+  margin-left: 0px;
+  animation: pacman-food 0.5s -0.33s infinite linear;
+}
+
+@keyframes eating-top {
+  0% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes eating-bottom {
+  0% {
+    transform: rotate(80deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
+}
+
+@keyframes pacman-food {
+  0% {
+    box-shadow: 70px 0 0 0 #ffff00, 120px 0 0 0 #ffff00, 170px 0 0 0 #ffff00,
+      220px 0 0 0 #ffff00;
+  }
+
+  100% {
+    box-shadow: 20px 0 0 0 #ffff00, 70px 0 0 0 #ffff00, 120px 0 0 0 #ffff00,
+      170px 0 0 0 #ffff00;
+  }
+}

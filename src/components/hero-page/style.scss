@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.image {
+  align-self: flex-end;
+}
+
+/* Example style for the div */
+.content {
+  /* add your styles here */
+}
+
+.nav {
+  animation: slide 1s ease-in;
+}
