@@ -2,8 +2,11 @@ import React, { useRef, useContext } from 'react';
 import { NavigationContext } from '../../context/navContext';
 import './styles.scss';
 import { Link, Outlet } from 'react-router-dom';
-import { AiFillCiCircle } from 'react-icons/ai';
-import { FaRegUser } from 'react-icons/fa';
+import { AiFillCiCircle, AiOutlineHome } from 'react-icons/ai';
+import { GiMagicPalm } from 'react-icons/gi';
+import { GrProjects } from 'react-icons/gr';
+import { BsFillFileEarmarkPersonFill } from 'react-icons/bs';
+import { TbBorderAll } from 'react-icons/tb';
 
 import Tooltip from '../tool-tip';
 
@@ -11,40 +14,44 @@ const CircleNav = () => {
   const { handleScroll } = useContext(NavigationContext);
   return (
     <>
-      <div className="nav h-[250px] w-[250px] md:block hidden drop-shadow-3xl bg-secondary z-50 rounded-full fixed top-[-40px] left-[-50px]">
-        <div className="w-[248px] h-[248px] bg-primary rounded-full z-[3] relative">
+      <div className="nav h-[252px] w-[252px] md:block hidden drop-shadow-3xl bg-white z-50 rounded-full fixed top-[-40px] left-[-50px]">
+        <div className="w-[248px] h-[248px] bg-primary rounded-full z-[3] relative flex items-center justify-center">
+          <div className="">
+            <AiFillCiCircle className="w-[6rem] h-[6rem] hover:h-[5rem] hover:w-[5rem]" />
+          </div>
           <Link
             onClick={() => handleScroll('home')}
             to={'/'}
-            className="absolute top-[50] right-[-20] bg-secondary rounded-full"
+            className="absolute top-[45] right-[-26] bg-secondary rounded-full border-4 border-white cursor-pointer"
           >
-            <Tooltip content="skills">
-              <AiFillCiCircle className="w-[6rem] h-[6rem] hover:h-[7rem] hover:w-[7rem]" />
+            <Tooltip content="Home">
+              <AiOutlineHome className="w-[6rem] h-[6rem] hover:h-[7rem] hover:w-[7rem] p-5 hover:z-30" />
             </Tooltip>{' '}
           </Link>
           <Link
             onClick={() => handleScroll('services')}
             to={'/skills'}
-            className="absolute top-[140] right-[-20] bg-secondary rounded-full cursor-pointer"
+            className="absolute top-[128] right-[-28] bg-secondary rounded-full border-4 border-white cursor-pointer"
           >
-            <Tooltip content="skills">
-              <FaRegUser className="w-[6rem] h-[6rem] hover:h-[7rem] hover:w-[7rem] p-5" />
+            <Tooltip content="Skills">
+              <GiMagicPalm className="w-[6rem] h-[6rem] hover:h-[7rem] hover:w-[7rem] p-5 hover:z-30" />
             </Tooltip>{' '}
           </Link>
           <Link
             onClick={() => handleScroll('about-me')}
-            className="absolute bottom-[-20] right-[40] bg-secondary rounded-full cursor-pointer"
+            to={'/about-me'}
+            className="absolute bottom-[-18] right-[25] bg-secondary rounded-full border-4 border-white cursor-pointer"
           >
-            <Tooltip content="skills">
-              <AiFillCiCircle className="w-[6rem] h-[6rem] hover:h-[7rem] hover:w-[7rem]" />
+            <Tooltip content="About Me">
+              <BsFillFileEarmarkPersonFill className="w-[6rem] h-[6rem] hover:h-[7rem] hover:w-[7rem] p-5 hover:z-30" />
             </Tooltip>{' '}
           </Link>
           <Link
-            className="absolute bottom-[-20] left-[60] bg-secondary rounded-full cursor-pointer"
-            data-tip="sample data"
+            onClick={() => handleScroll('projects')}
+            className="absolute bottom-[-35] left-[57] bg-secondary rounded-full border-4 border-white cursor-pointer"
           >
-            <Tooltip content="skills">
-              <AiFillCiCircle className="w-[6rem] h-[6rem] hover:h-[7rem] hover:w-[7rem]" />
+            <Tooltip content="Projects">
+              <TbBorderAll className="w-[6rem] h-[6rem] hover:h-[7rem] hover:w-[7rem] p-5 text-white hover:z-30" />
             </Tooltip>
           </Link>
         </div>

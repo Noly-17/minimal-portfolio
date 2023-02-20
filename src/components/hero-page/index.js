@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom';
 import CustomButton from '../button';
 import CircleNav from '../circle-nav';
 import Nav from '../nav';
+import RightNav from '../right-nav';
 
 const TopNav = () => {
   return (
     <div>
       <CircleNav />
       <Nav />
+      <RightNav />
     </div>
   );
 };
@@ -27,7 +29,7 @@ const HeroPage = () => {
       >
         <div className="nav flex flex-col gap-10 text-center drop-shadow-3xl text-white sm:w-[360px] p-10">
           <h4 className="text-7xl font-bold">Hi, I'm Noly,</h4>
-          <h4 className="text-8xl font-bold">Web Developer</h4>
+          <h4 className="text-8xl font-bold">Fullstack Developer</h4>
           <p className="text-3xl ">
             Many suffered under this law, but the ultimate effect was to invest
             the press with new popularity, and very soon the newspapers
@@ -52,4 +54,4 @@ const HeroPage = () => {
   );
 };
 
-export default forwardRef(HeroPage);
+export default HeroPage;

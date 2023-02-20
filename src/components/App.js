@@ -5,6 +5,7 @@ import HeroPage from './hero-page';
 import Services from './Sevices';
 import SkillsPage from './skills-page';
 import AboutMe from './about-me';
+import Projects from './projects-page';
 import Footer from './footer';
 
 import Pacman from '../components/pacman';
@@ -18,6 +19,7 @@ const App = () => {
       <Services />
       <SkillsPage />
       <AboutMe />
+      <Projects />
       <Footer />
     </NavContextProvider>
   );
