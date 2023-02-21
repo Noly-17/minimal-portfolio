@@ -6,10 +6,10 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="pb-16 pt-14 md:h-[300px] bg-gradient-to-r from-[#838295] to-secondary  flex flex-col items-center justify-center gap-10 md:pb-0  md:pt-52"
+      className="pb-16 px-5 pt-8 xl:pt-14 2xl:h-[300px] bg-gradient-to-r from-[#838295] to-secondary  flex flex-col items-center justify-center gap-10 md:pb-0  md:pt-52"
     >
-      <h3 className="text-white text-4xl">Services</h3>
-      <div className="nav grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-20">
+      <h3 className="text-white text-6xl pt-10 md:pt-28">Services</h3>
+      <div className=" grid grid-cols-2 2xl:grid-cols-4 gap-5 md:gap-20 md:pb-10">
         <Card srcImage={gifs.fronDev} char="FRONTEND DEVELOPMENT" />
         <Card srcImage={gifs.backDev} char="BACKEND DEVELOPMENT" />
         <Card srcImage={gifs.mobileDev} char="MOBILE DEVELOPMENT" />

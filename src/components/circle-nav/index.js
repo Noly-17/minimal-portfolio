@@ -14,11 +14,11 @@ const CircleNav = () => {
   const { handleScroll } = useContext(NavigationContext);
   return (
     <>
-      <div className="nav h-[252px] w-[252px] md:block hidden drop-shadow-3xl bg-white z-50 rounded-full fixed top-[-40px] left-[-50px]">
+      <div className="h-[252px] w-[252px] md:block hidden drop-shadow-3xl bg-white z-50 rounded-full fixed top-[-40px] left-[-50px]">
         <div className="w-[248px] h-[248px] bg-primary rounded-full z-[3] relative flex items-center justify-center">
-          <div className="">
-            <AiFillCiCircle className="w-[6rem] h-[6rem] hover:h-[5rem] hover:w-[5rem]" />
-          </div>
+          <h3 className="text-7xl font-bold ">
+            N<span className="c-letter">.C</span>
+          </h3>
           <Link
             onClick={() => handleScroll('home')}
             to={'/'}

@@ -6,19 +6,23 @@ import SpinnigCube from '../spinning-cube';
 import FadingCarousel from '../fading-carousel';
 
 const SkillsPage = () => {
-  const { ref } = useContext(NavigationContext);
-
   return (
     <div
       id="skills"
-      className="h-[75vh] w-full bg-primary  md:gap-[500px] flex flex-col md:flex-row justify-center items-center"
+      className="h-[75vh] md:pt-52 w-full  bg-gradient-to-r from-[#dfb17a] to-primary gap-28 2xl:gap-[500px] flex flex-col 2xl:flex-row justify-center items-center"
     >
-      <div className="flex flex-col gap-24 items-center justify-center  mb-[100px] md:mb-[0]">
+      <div
+        className="flex flex-col gap-24 items-center justify-center  mb-[100px] md:mb-[0]"
+        data-aos="fade-right"
+      >
         <h3 className="text-4xl">CORE SKILLS</h3>
         <SpinnigCube />
       </div>
 
-      <div className="flex flex-col gap-16 items-center justify-center drop-shadow-4xl mb-[100px] md:mb-[0]">
+      <div
+        className="flex flex-col gap-16 items-center justify-center drop-shadow-4xl mb-[100px] 2xl:mb-[0]"
+        data-aos="fade-left"
+      >
         <h3 className="text-4xl">ADDITIONAL SKILLS</h3>
         <FadingCarousel />
       </div>

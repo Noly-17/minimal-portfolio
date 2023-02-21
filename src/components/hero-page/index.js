@@ -1,48 +1,62 @@
-import React, { forwardRef, useContext } from 'react';
+import React, { forwardRef, useContext, useEffect } from 'react';
 import { NavigationContext } from '../../context/navContext';
 import { images } from '../../assets';
 import { Link } from 'react-router-dom';
 import CustomButton from '../button';
 import CircleNav from '../circle-nav';
-import Nav from '../nav';
+import HumburgerMenu from '../humburger-menu';
 import RightNav from '../right-nav';
+import { AiOutlineDownload } from 'react-icons/ai';
+import { pdfs } from '../../assets';
 
 const TopNav = () => {
   return (
     <div>
       <CircleNav />
-      <Nav />
+      <HumburgerMenu />
       <RightNav />
     </div>
   );
 };
 
 const HeroPage = () => {
-  const { navRef } = useContext(NavigationContext);
-
   return (
     <>
       <TopNav />
       <div
         id="home"
-        className="h-screen flex gap-16 flex-col sm:flex-row  items-center bg-gradient-to-r from-[#dfb17a] to-primary justify-end md:justify-center max-w-full"
+        className="h-screen flex   flex-col sm:flex-row  items-center bg-gradient-to-r from-[#dfb17a] to-primary justify-end md:justify-center max-w-full"
       >
-        <div className="nav flex flex-col gap-10 text-center drop-shadow-3xl text-white sm:w-[360px] p-10">
-          <h4 className="text-7xl font-bold">Hi, I'm Noly,</h4>
-          <h4 className="text-8xl font-bold">Fullstack Developer</h4>
-          <p className="text-3xl ">
-            Many suffered under this law, but the ultimate effect was to invest
-            the press with new popularity, and very soon the newspapers
-            conceived a device which effectually protected their literary staff,
-            for they employed dummy editors whose sole function was to go to
-            prison in lieu of the true editor
+        <div
+          className=" flex flex-col items-center justify-center gap-10 text-center drop-shadow-3xl text-white sm:w-[360px] w-full"
+          data-aos="fade-right"
+        >
+          <h4 className="text-6xl md:text-7xl font-bold">Hi, I'm Noly,</h4>
+          <h4 className="text-6xl md:text-8xl font-bold">
+            Fullstack Developer
+          </h4>
+          <p className="text-2xl md:text-3xl max-w-topChar">
+            Welcome to my portfolio! I'm a Noly Canlas Jr. software developer
+            with 2+ years of experience in software development. Check out
+            examples of my work and find more information about my skills,
+            experience, and technologies here. If you have a project in mind,
+            let's talk! I'm always ready for new challenges.
           </p>
           <div className="w-full flex gap-10 items-center justify-center">
-            <CustomButton>Download My CV</CustomButton>
-            <CustomButton>CV</CustomButton>
+            <CustomButton
+              type="submit"
+              dl={pdfs.CV}
+              icon={<AiOutlineDownload size="2rem" />}
+            >
+              CV
+            </CustomButton>
+            <CustomButton>Hire Me</CustomButton>
           </div>
         </div>
-        <div className=" ml-18 flex justify-end h-screen w-auto ml-16">
+        <div
+          className="flex justify-center items-center md:h-screen w-auto 2xl:mr-[-150px]"
+          data-aos="fade-left"
+        >
           <img
             src={images.homePic}
             alt="dp"

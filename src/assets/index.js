@@ -14,6 +14,19 @@ import hooli from './images/hooli.jpg';
 import gmb from './images/gmb.jpg';
 import xv from './images/10x.jpg';
 import cnomads from './images/cnomads.jpg';
+import netflix from './images/netflix.png';
+import pixa from './images/pixabay.png';
+import care from './images/care-admin.png';
+import frontida from './images/frontida.png';
+import fapp from './images/fapp.png';
+import caremob from './images/care-mob.jpg';
+import gmbsite from './images/gmbsite.png';
+import grubmarket from './images/grubmarket.png';
+import fistx from './images/firstx.png';
+import github from './images/github.png';
+import twitter from './images/twitter.png';
+import facebook from './images/Facebook-logo.png';
+import slack from './images/slack.png';
 
 // gifs
 import fronDev from './gifs/frontend-dev.gif';
@@ -21,6 +34,9 @@ import backDev from './gifs/backend-dev.gif';
 import mobileDev from './gifs/mobile-dev.gif';
 import softwareDev from './gifs/software-dev.gif';
 import softDev from './gifs/soft-dev.gif';
+
+// pdfs
+import CV from './pdfs/CV.pdf';
 
 export const images = {
   homePic: dp,
@@ -38,6 +54,19 @@ export const images = {
   gmb,
   xv,
   cnomads,
+  netflix,
+  pixa,
+  care,
+  frontida,
+  fapp,
+  caremob,
+  gmbsite,
+  grubmarket,
+  fistx,
+  github,
+  twitter,
+  facebook,
+  slack,
 };
 
 export const gifs = {
@@ -46,4 +75,8 @@ export const gifs = {
   mobileDev,
   softwareDev,
   softDev,
+};
+
+export const pdfs = {
+  CV,
 };

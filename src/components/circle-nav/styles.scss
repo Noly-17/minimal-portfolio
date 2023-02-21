@@ -1,3 +1,28 @@
 .nav {
   animation: slide 1s ease-in;
 }
+
+.c-letter {
+  animation: background-pan 3s linear infinite;
+  background-image: linear-gradient(
+    to right,
+    rgb(102, 135, 156),
+    gray,
+    rgb(215, 220, 218),
+    rgb(177, 154, 177)
+  );
+  background-size: 200%;
+  // background-image: linear-gradient(to right, purple violet pink purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}

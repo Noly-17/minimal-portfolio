@@ -1,78 +1,165 @@
-body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  margin: 0rem;
-  overflow: hidden;
-}
+// @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
-#image-track {
-  display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%);
-  user-select: none; /* -- Prevent image highlighting -- */
-}
-
-#image-track > .image {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: 100% center;
-}
-
-/* -- YouTube Link Styles -- */
-
-body.menu-toggled > .meta-link > span {
-  color: rgb(30, 30, 30);
-}
-
-#source-link {
-  bottom: 60px;
-}
-
-#source-link > i {
-  color: rgb(94, 106, 210);
-}
-
-#yt-link > i {
-  color: rgb(239, 83, 80);
-}
-
-.meta-link {
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  bottom: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  display: inline-flex;
-  gap: 5px;
-  left: 10px;
-  padding: 10px 20px;
-  position: fixed;
+a {
   text-decoration: none;
-  transition: background-color 400ms, border-color 400ms;
-  z-index: 10000;
 }
 
-.meta-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+  background-color: #be9261;
 }
 
-.meta-link > i,
-.meta-link > span {
-  height: 20px;
-  line-height: 20px;
+.card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+  background: #be9261;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.meta-link > span {
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
+.card-list::-webkit-scrollbar-track {
+  background: #be9261;
+}
+
+.card {
+  height: 350px;
+  width: 300px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #323048;
+  box-shadow: -1rem 0 3rem #000;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+}
+
+.card:focus-within ~ .card,
+.card:hover ~ .card {
+  transform: translateX(130px);
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+
+.card-header {
+  margin-bottom: auto;
+}
+
+.card-header p {
+  font-size: 14px;
+  margin: 0 0 1rem;
+  color: #be9261;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  margin: 0.25rem 0 auto;
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-header h2:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.card-author {
+  margin: 3rem 0 0;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  position: relative;
+}
+
+.author-avatar {
+  grid-area: auto;
+  align-self: start;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.author-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  display: block;
+  overflow: hidden;
+  margin: 16px 10px;
+}
+
+.author-name {
+  grid-area: auto;
+  box-sizing: border-box;
+}
+
+.author-name-prefix {
+  font-size: xx-large;
+  font-style: normal;
+  font-weight: 700;
+  color: #7a7a8c;
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #be9261;
+  stroke-width: 8;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.tags {
+  margin: 1rem 0 2rem;
+  padding: 0.5rem 0 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.tags a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5rem;
+  color: #7a7a8c;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  border: 3px solid #28242f;
+  border-radius: 2rem;
+  padding: 0.2rem 0.85rem 0.25rem;
+  position: relative;
+}
+
+.tags a:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
 }
