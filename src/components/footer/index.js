@@ -16,18 +16,24 @@ const Footer = () => {
           </h4>
         </div>
         <div className="flex flex-row gap-10">
-          <CiFacebook
-            size="3rem"
-            className="bg-primary rounded-full hover:bg-white cursor-pointer"
-          />
-          <BsGithub
-            size="3rem"
-            className="bg-primary rounded-full hover:bg-white cursor-pointer"
-          />
-          <AiOutlineSlack
-            size="3rem"
-            className="bg-primary rounded-full hover:bg-white cursor-pointer"
-          />
+          <a href="https://www.facebook.com/Noly.Jr/">
+            <CiFacebook
+              size="3rem"
+              className="bg-primary rounded-full hover:bg-white cursor-pointer"
+            />
+          </a>
+          <a href="https://github.com/Noly-17">
+            <BsGithub
+              size="3rem"
+              className="bg-primary rounded-full hover:bg-white cursor-pointer"
+            />
+          </a>
+          {/* <a>
+            <AiOutlineSlack
+              size="3rem"
+              className="bg-primary rounded-full hover:bg-white cursor-pointer"
+            />
+          </a> */}
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="flex items-center justify-center gap-3">

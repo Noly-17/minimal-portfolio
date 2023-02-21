@@ -22,21 +22,9 @@ const Projects = () => {
           <div className="author-name">
             <div className="author-name-prefix">Grub Market</div>
           </div>
-          {/* <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
 
-          
-        </div> */}
           <div className="tags flex">
-            <a href="#">
-              <BsGithub size="1rem" />
-            </a>
-            <a href="#">
+            <a href="https://www.grubmarket.com/hello/">
               <AiOutlineLink size="1rem" />
             </a>
           </div>
@@ -48,21 +36,9 @@ const Projects = () => {
           <div className="author-name">
             <div className="author-name-prefix">First X</div>
           </div>
-          {/* <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
 
-          
-        </div> */}
           <div className="tags flex">
-            <a href="#">
-              <BsGithub size="1rem" />
-            </a>
-            <a href="#">
+            <a href="https://www.firstx.ai/">
               <AiOutlineLink size="1rem" />
             </a>
           </div>
@@ -78,21 +54,9 @@ const Projects = () => {
           <div className="author-name">
             <div className="author-name-prefix">GMB</div>
           </div>
-          {/* <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
 
-          
-        </div> */}
           <div className="tags flex">
-            <a href="#">
-              <BsGithub size="1rem" />
-            </a>
-            <a href="#">
+            <a href="https://gamemybiz.com/">
               <AiOutlineLink size="1rem" />
             </a>
           </div>
@@ -108,22 +72,10 @@ const Projects = () => {
           <div className="author-name">
             <div className="author-name-prefix">Care-Client</div>
           </div>
-          {/* <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
 
-          
-        </div> */}
           <div className="tags flex">
-            <a href="#">
+            <a href="https://github.com/Noly-17/care-Mobile">
               <BsGithub size="1rem" />
-            </a>
-            <a href="#">
-              <AiOutlineLink size="1rem" />
             </a>
           </div>
         </article>
@@ -138,21 +90,12 @@ const Projects = () => {
           <div className="author-name">
             <div className="author-name-prefix">Frontida</div>
           </div>
-          {/* <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
 
-          
-        </div> */}
           <div className="tags flex">
             <a href="#">
               <BsGithub size="1rem" />
             </a>
-            <a href="#">
+            <a href="https://frontida-command-center.web.app/">
               <AiOutlineLink size="1rem" />
             </a>
           </div>
@@ -165,22 +108,10 @@ const Projects = () => {
           <div className="author-name">
             <div className="author-name-prefix">Pixabay-app</div>
           </div>
-          {/* <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
 
-          
-        </div> */}
           <div className="tags flex">
-            <a href="#">
+            <a href="https://github.com/Noly-17/React-Native-Pixabay">
               <BsGithub size="1rem" />
-            </a>
-            <a href="#">
-              <AiOutlineLink size="1rem" />
             </a>
           </div>
         </article>
@@ -192,21 +123,12 @@ const Projects = () => {
           <div className="author-name">
             <div className="author-name-prefix">Care-Admin</div>
           </div>
-          {/* <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
 
-          
-        </div> */}
           <div className="tags flex">
-            <a href="#">
+            <a href="https://github.com/Noly-17/careSuperAdminWeb">
               <BsGithub size="1rem" />
             </a>
-            <a href="#">
+            <a href="care-super-admin.web.app">
               <AiOutlineLink size="1rem" />
             </a>
           </div>
@@ -222,21 +144,12 @@ const Projects = () => {
           <div className="author-name">
             <div className="author-name-prefix">Netflix</div>
           </div>
-          {/* <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
 
-          
-        </div> */}
           <div className="tags flex">
-            <a href="#">
+            <a href="https://github.com/Noly-17/netflix-clone-project">
               <BsGithub size="1rem" />
             </a>
-            <a href="#">
+            <a href="https://netflix-clone-b9a53.web.app">
               <AiOutlineLink size="1rem" />
             </a>
           </div>

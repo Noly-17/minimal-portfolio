@@ -20,6 +20,8 @@ const TopNav = () => {
 };
 
 const HeroPage = () => {
+  const { handleScroll } = useContext(NavigationContext);
+
   return (
     <>
       <TopNav />
@@ -50,7 +52,9 @@ const HeroPage = () => {
             >
               CV
             </CustomButton>
-            <CustomButton>Hire Me</CustomButton>
+            <CustomButton onClick={() => handleScroll('projects')}>
+              Hire Me
+            </CustomButton>
           </div>
         </div>
         <div

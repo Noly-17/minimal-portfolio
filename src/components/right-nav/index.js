@@ -17,10 +17,12 @@ const RightNav = () => {
       data-aos="zoom-in"
     >
       <div className="p-5">
-        <CiFacebook
-          size="3rem"
-          className="text-white rounded-full bg-[#1771e6] cursor-pointer hover:bg-secondary"
-        />
+        <a href="https://www.facebook.com/Noly.Jr/">
+          <CiFacebook
+            size="3rem"
+            className="text-white rounded-full bg-[#1771e6] cursor-pointer hover:bg-secondary"
+          />
+        </a>
       </div>
       <div className="p-5">
         <AiFillTwitterCircle
@@ -29,17 +31,19 @@ const RightNav = () => {
         />
       </div>
       <div className="p-5">
-        <AiFillGithub
-          size="3rem"
-          className="bg-white rounded-full text-black cursor-pointer hover:bg-secondary"
-        />
+        <a href="https://github.com/Noly-17">
+          <AiFillGithub
+            size="3rem"
+            className="bg-white rounded-full text-black cursor-pointer hover:bg-secondary"
+          />
+        </a>
       </div>
-      <div className="p-5">
+      {/* <div className="p-5">
         <img
           src={images.slack}
           className="bg-white rounded-full w-12 h-12 p-1 cursor-pointer hover:bg-secondary"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
