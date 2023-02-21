@@ -38,7 +38,7 @@ const HeroPage = () => {
             Fullstack Developer
           </h4>
           <p className="text-2xl md:text-3xl max-w-topChar">
-            Welcome to my portfolio! I'm a Noly Canlas Jr. software developer
+            Welcome to my portfolio! I'm Noly Canlas Jr. a software developer
             with 2+ years of experience in software development. Check out
             examples of my work and find more information about my skills,
             experience, and technologies here. If you have a project in mind,
