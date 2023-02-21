@@ -1,11 +1,13 @@
 {
+  "homepage": "https://Noly-17.github.io/minimal-portfolio",
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -31,6 +33,7 @@
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",

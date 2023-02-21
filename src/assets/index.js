@@ -27,7 +27,7 @@ import github from './images/github.png';
 import twitter from './images/twitter.png';
 import facebook from './images/Facebook-logo.png';
 import slack from './images/slack.png';
-
+import titleLogo from './images/logo-title.png';
 // gifs
 import fronDev from './gifs/frontend-dev.gif';
 import backDev from './gifs/backend-dev.gif';
@@ -67,6 +67,7 @@ export const images = {
   twitter,
   facebook,
   slack,
+  titleLogo,
 };
 
 export const gifs = {

@@ -9,10 +9,10 @@ const SkillsPage = () => {
   return (
     <div
       id="skills"
-      className="h-[75vh] md:pt-52 w-full  bg-gradient-to-r from-[#dfb17a] to-primary gap-28 2xl:gap-[500px] flex flex-col 2xl:flex-row justify-center items-center"
+      className="h-full md:h-[75vh] xl:h-[85vh] md:pt-52 w-full  bg-gradient-to-r from-[#dfb17a] to-primary gap-28 2xl:gap-[500px] flex flex-col 2xl:flex-row justify-center items-center"
     >
       <div
-        className="flex flex-col gap-24 items-center justify-center  mb-[100px] md:mb-[0]"
+        className="flex flex-col gap-24 items-center justify-center  mb-[70px] md:mb-[0]"
         data-aos="fade-right"
       >
         <h3 className="text-4xl">CORE SKILLS</h3>
