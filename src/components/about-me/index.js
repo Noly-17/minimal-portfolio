@@ -32,12 +32,13 @@ const AboutMe = () => {
               className="text-white text-2xl md:text-3xl max-w-readable text-center px-5"
               data-aos="fade-left"
             >
-              I am a software developer who has worked for more than 2 years,
-              and I have a practical approach to my work. I possess strong
-              skills in agile methodology and prioritize the needs of the
-              end-users. My expertise lies in Javascript, Typescript as well as
-              other languages, libraries, and frameworks that can be used to
-              solve real-world problems through coding.
+              I am an experienced software developer with over two years of
+              practical experience. My approach to work is grounded in agile
+              methodology, and I prioritize the needs of end-users to ensure
+              that the solutions I develop meet their needs. I have strong
+              skills in Javascript, as well as proficiency in other programming
+              languages, libraries, and frameworks that can be utilized to solve
+              real-world problems through coding.
             </h4>
           </div>
 
