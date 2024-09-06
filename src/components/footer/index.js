@@ -1,5 +1,5 @@
 import React from 'react';
-import { CiFacebook } from 'react-icons/ci';
+import { CiLinkedin } from 'react-icons/ci';
 import { BsGithub } from 'react-icons/bs';
 import { TiMessages } from 'react-icons/ti';
 import { AiOutlineSlack, AiOutlineMail } from 'react-icons/ai';
@@ -16,8 +16,8 @@ const Footer = () => {
           </h4>
         </div>
         <div className="flex flex-row gap-10">
-          <a href="https://www.facebook.com/Noly.Jr/">
-            <CiFacebook
+          <a href="https://www.linkedin.com/in/noly-canlas-6987a8213/">
+            <CiLinkedin
               size="3rem"
               className="bg-primary rounded-full hover:bg-white cursor-pointer"
             />

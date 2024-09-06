@@ -18,6 +18,7 @@
     "gsap": "^3.11.4",
     "html-loader": "^4.2.0",
     "loaders.css": "^0.1.2",
+    "portfolio": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",

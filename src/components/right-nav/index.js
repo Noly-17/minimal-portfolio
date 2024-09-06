@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 
-import { CiFacebook, CiTwitter } from 'react-icons/ci';
+import { CiLinkedin, CiTwitter } from 'react-icons/ci';
 import { BsGithub } from 'react-icons/bs';
 import {
   AiOutlineSlack,
@@ -17,8 +17,8 @@ const RightNav = () => {
       data-aos="zoom-in"
     >
       <div className="p-5">
-        <a href="https://www.facebook.com/Noly.Jr/">
-          <CiFacebook
+        <a href="https://www.linkedin.com/in/noly-canlas-6987a8213/">
+          <CiLinkedin
             size="3rem"
             className="text-white rounded-full bg-[#1771e6] cursor-pointer hover:bg-secondary"
           />
